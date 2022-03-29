@@ -1,0 +1,30 @@
+body {
+	background-color: #e7ffe9;
+	font-family: sans-serif;
+}
+
+h2, h3{
+	color: #00a50e;
+}
+hr {
+	box-shadow: 2px 2px 2px 1px rgb(0 165 14 / 34%);
+    border-color: #75ff92fc;
+}
+.moodImg {
+  /* Add shadows to create the "card" effect */
+  	height: 350px;
+  	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    background-color: #fffadb;
+    border-radius: 50px;
+}
+
+/* On mouse-over, add a deeper shadow */
+.moodImg:hover {
+  	box-shadow: 0 5px 5px 0 rgb(255 231 80);
+}
+
+.impWord{
+	font-weight: bold;
+	color: #d1b922;
+}
