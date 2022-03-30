@@ -5,6 +5,8 @@ body {
 
 h2, h3{
 	color: #00a50e;
+	text-align: center;
+	font-size: 30px;
 }
 hr {
 	box-shadow: 2px 2px 2px 1px rgb(0 165 14 / 34%);
@@ -27,4 +29,42 @@ hr {
 .impWord{
 	font-weight: bold;
 	color: #d1b922;
+}
+
+.validatorImage{
+	height: 50px;
+	border: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+p::first-letter {
+	font-size: 1.5em;
+}
+
+.movieDetailTitle {
+    color: #9c27b0;
+    font-weight: bold;
+    font-family: monospace;
+}
+
+.movieDetailDescription {
+    color: #00bcd4;
+    margin-left: 40px;
+    font-family: monospace;
+}
+
+.revList {
+    transform: rotate(180deg);
+    padding-inline-start: 0px;
+    margin-inline-start: 40px;
+}
+.revList > li {
+    transform: rotate(-180deg);
 }
