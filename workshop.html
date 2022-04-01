@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Workshop Registration</title>
+	<link rel="stylesheet" type="text/css" href="./css/workshop.css">
+</head>
+<body>
+	<form class="form_aggregate">
+		<div class="form_title_div">
+			<div class="title">
+				Workshop Registration
+				<div class="dropdown">
+				    <button class="dropbtn">More Actions
+				      <i class="arrow down"></i>
+				    </button>
+				    <div class="dropdown-content">
+				      <a href="#">Action 1</a>
+				      <a href="#">Action 2</a>
+				      <a href="#">Action 3</a>
+				    </div>
+				</div>
+			</div>
+		</div>
+		<div class="form_body_div">
+			<span style="text-decoration: underline;">Register now while seats are available!</span>
+			<div class="form_body_partitions">
+				<div class="form_body_left_div">
+					<!-- First Name -->
+					<div class="form_label">
+						<label for="firstName">First Name</label>
+					</div>
+					<div class="form_input_field">
+						<input type="text" name="firstName" id="firstName"/>
+					</div>
+					<!-- Last name -->
+					<div class="form_label">
+						<label for="lastName">Last Name</label>
+					</div>
+					<div class="form_input_field">
+						<input type="text" name="lastName" id="lastName"/>
+					</div>
+					<!-- Company/Institution -->
+					<div class="form_label">
+						<label for="company">Company / Institution</label>
+					</div>
+					<div class="form_input_field">
+						<input type="text" name="company" id="company"/>
+					</div>
+					<!-- Address -->
+					<div class="form_label">
+						<label for="Address">Address</label>
+					</div>
+					<div class="form_input_field">
+						<input type="textarea" name="Address" id="Address"></input>
+					</div>
+					<!-- City -->
+					<div class="form_label">
+						<label for="city">City</label>
+					</div>
+					<div class="form_input_field">
+						<input type="text" name="city" id="city"/>
+					</div>
+					<!-- State/Province/Region -->
+					<div class="form_label">
+						<label for="state">State / Province / Region</label>
+					</div>
+					<div class="form_input_field">
+						<select name="state" id="state">
+							<option value="s1">State 1</option>
+							<option value="s2">State 2</option>
+							<option value="s3">State 3</option>
+							<option value="s4">State 4</option>
+							<option value="s5">State 5</option>
+							<option value="s6">State 6</option>
+						</select>
+					</div>
+					<!-- Country -->
+					<div class="form_label">
+						<label for="country">Country</label>
+					</div>
+					<div class="form_input_field">
+						<select name="country" id="country">
+							<option value="c1">Country 1</option>
+							<option value="c2">Country 2</option>
+							<option value="c3">Country 3</option>
+							<option value="c4">Country 4</option>
+							<option value="c5">Country 5</option>
+							<option value="c6">Country 6</option>
+						</select>
+					</div>
+					<!-- Email -->
+					<div class="form_label">
+						<label for="email">Email</label>
+					</div>
+					<div class="form_input_field">
+						<input type="email" name="email" id="email"/>
+					</div>
+					<!-- Phone Number -->
+					<div class="form_label">
+						<label for="phone">Phone Number</label>
+					</div>
+					<div class="form_input_field">
+						<input type="tel" name="phone" id="phone" pattern="[0-9]{10}" />
+					</div>
+				</div>
+				<div class="form_body_right_div">
+					<div class="form_label">
+						<span style="text-decoration: underline;">Lunch</span>
+					</div>
+					<div class="form_input_field">
+					</div>
+					<!-- Meal Preference -->
+					<div class="form_label">
+						<label for="meal">Meal Preference</label>
+					</div>
+					<div class="form_input_field">
+						<select name="meal" id="meal">
+							<option value="m1">Meal 1</option>
+							<option value="m2">Meal 2</option>
+							<option value="m3">Meal 3</option>
+							<option value="m4">Meal 4</option>
+							<option value="m5">Meal 5</option>
+							<option value="m6">Meal 6</option>
+						</select>
+					</div>
+					<div class="form_label">
+						<span style="text-decoration: underline;">Payment Details</span>
+					</div>
+					<div class="form_input_field">
+					</div>
+					<!-- Payment Mode -->
+					<div class="form_label">
+						<label>Payment Mode</label>
+					</div>
+					<div class="form_input_field">
+						<div>
+							<label>
+								<input type="checkbox" name="payment" value="cash" />
+								Cash
+							</label>
+						</div>
+						<div>
+							<label>
+								<input type="checkbox" name="payment" value="cheque" />
+								Cheque
+							</label>
+						</div>
+						<div>
+							<label>
+								<input type="checkbox" name="payment" value="draft" />
+								Demand Draft
+							</label>
+						</div>
+					</div>
+					<!-- DD/Cheque No. -->
+					<div class="form_label">
+						<label for="chequeNo">DD / Cheque No.</label>
+					</div>
+					<div class="form_input_field">
+						<input type="text" name="chequeNo" id="chequeNo"/>
+					</div>
+					<!-- Draw On (Bank name) -->
+					<div class="form_label">
+						<label for="bankName">Draw On (Bank Name)</label>
+					</div>
+					<div class="form_input_field">
+						<input type="text" name="bankName" id="bankName"/>
+					</div>
+					<!-- Payable at -->
+					<div class="form_label">
+						<label for="payableAt">Payable at</label>
+					</div>
+					<div class="form_input_field">
+						<input type="text" name="payableAt" id="payableAt"/>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="form_footer_div">
+			<input type="submit" class="form_button" />
+			<input type="reset" class="form_button" />
+		</div>
+	</form>
+	<a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fsiddhant-pageni.github.io%2Fwap.github.io%2Fworkshop.html" title="Check the validity of this site&#8217;s HTML" class="validate-html">
+			<img src="./images/HTML-checker.png" alt="HTML Validator">
+		</a>
+</body>
+</html>
