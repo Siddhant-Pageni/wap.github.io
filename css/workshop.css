@@ -121,3 +121,8 @@ select {
     margin-top: 25px;
     display: inline-block;
 }
+.validate-css > img {
+	height: 46px;
+    margin-top: 25px;
+    display: inline-block;
+}
