@@ -1,0 +1,3 @@
+The scheduled function will run after the loop. Because the setTimeout method initiates an aychronous task which is recorded in the callback Task Queue and is only placed into the stack by the Event Loop once the stack is empty. And the stack will be empty only when the for loop completes its execution.
+
+The alert will show 100000000.
