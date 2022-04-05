@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script>
+		function askPassword(ok, fail) {
+			console.log(this);
+			let password = prompt("Password?", '');
+			if(password == "rockstar") ok();
+			else fail();
+		}
+
+		let user = {
+			name: 'John',
+			loginOk() {
+				alert(`${this.name} logged in`);
+			},
+			loginFail() {
+				alert(`${this.name} failed to log in`);
+			}
+		}
+
+		// askPassword(user.loginOk, user.loginFail);
+
+		// Solution using Bind
+
+		// let bindedAskPassword = askPassword.bind(user); //(() => user.loginOk(), () =>user.loginFail());
+		// bindedAskPassword(() => user.loginOk(), () => user.loginFail());
+
+		// Solution using Call
+		// askPassword.call(user, () => user.loginOk(), () => user.loginFail());
+
+		// Solution using Apply
+		// askPassword.apply(user, [() => user.loginOk(), () => user.loginFail()]);
+
+		// Question 2: Fix the code below using bind
+		let group = {
+			title: "Our Group",
+			students: ["John", "Pete", "Alice"],
+			showList: function() {
+				console.log(this);
+				this.students.forEach(function(student) {
+					console.log(this.title + ": " + student);
+				}.bind(group));
+			}
+		};
+		group.showList();
+		// Added ".bind(group) in line 44"
+	</script>
+</head>
+<body>
+
+</body>
+</html>
