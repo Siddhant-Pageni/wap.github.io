@@ -1,0 +1,14 @@
+1. Explain why do we want sometimes to use setImmediate instead of using setTimeout?
+The setTimeout callback functions are registered in the timers queue of the event loop.
+The setImmediate callback functions are registered in the check queue of the event loop.
+
+We know that the even loop looks like this: "timers --> IO --> idle/prepare --> poll --> check --> close --> timers ...", hence the callbacks of the setTimeout is invoked before setImmediate callbacks. 
+
+2. Explain the difference between process.nextTick and setImmediate?
+The process.nextTick callback function are registered in the nextTick queue.
+The setImmediate callback functions are registered in the check queue of the event loop.
+
+nextTick queue is not a part of the event loop. Node gives higher prority to the nextTick queue and processes all the callbacks in the nextTick queue after the current operation completes and before the event loop continues.
+
+3. Does Node.js has window object?
+No. Because node is not responsible for the DOM elements and does not run on the browser. It is a server side framework using javascript.
