@@ -1,0 +1,3 @@
+1. Create a simple Node script that converts 'www.miu.edu' domain name to the equivalent IP address. (Search and learn 'dns' module, resolve4) - For this exercise, you need to look up Node.js API by yourself
+
+2. Create a web server that's going to send a response of big image (bigger then 3MB) to any client that sends a request to your specified server:port. Use the best way for performance. (Try to solve this in many different ways)
