@@ -2,7 +2,6 @@ const Book = require("../models/book");
 
 // CREATE
 exports.save = (req, res, next) => {
-    console.log("Inside Create Controller")
     const book = req.body;
     console.log(book);
     const createdBook = new Book(

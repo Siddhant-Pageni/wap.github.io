@@ -2,18 +2,15 @@ let books = [];
 
 class Book {
     constructor(id, title, isbn, publishedDate, author) {
-        console.log("Inside Book Constructor");
         this.id = id;
         this.title = title;
         this.isbn = isbn;
         this.publishedDate = publishedDate;
         this.author = author;
-        console.log("Exiting Book Constructor");
     }
 
     // CREATE
     save() {
-        console.log("Inside Create Model")
         this.id = Math.random().toString();
         books.push(this);
         return this;
