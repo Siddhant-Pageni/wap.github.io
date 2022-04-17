@@ -29,6 +29,8 @@ class Book {
 
     // UPDATE
     update() {
+        console.log("Inside update --> Model");
+        console.log(this);
         const index = books.findIndex((p) => p.id == this.id);
         if (index > -1) {
             books.splice(index, 1, this);

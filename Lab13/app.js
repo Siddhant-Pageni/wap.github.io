@@ -1,8 +1,9 @@
 const express = require("express");
+const cors = require('cors')
 const bookRouter = require("./routes/book");
 
 const app = express();
-
+app.use(cors())
 app.use(express.json());
 
 app.use("/books", bookRouter);

@@ -30,6 +30,7 @@ exports.update = (req, res, next) => {
     const book = req.body;
     const updatedBook = new Book(
         req.params.bookId,
+        book.title,
         book.isbn,
         book.publishedDate,
         book.author
